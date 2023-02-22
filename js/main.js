@@ -12,11 +12,14 @@
 
 const luisa = {
     fisico: 'hermosa',
-    cualidad(){
-        console.log("luisa es :" + " " + this.fisico);
-    },
-    cualidadFlecha: () => {
-        console.log("luisa es :" + " " + this.fisico);
+    cualidad: function (){
+        setTimeout(function(){
+            console.log(this.cualidad);
+        }, 5000);
     }
+    // cualidadFlecha: () => {
+    //     console.log("luisa es :" + " " + this.fisico);
+    // }
 }
 console.log(luisa.cualidad());
+// console.log(luisa.cualidadFlecha());
