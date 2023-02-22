@@ -13,13 +13,14 @@
 const luisa = {
     fisico: 'hermosa',
     cualidad: function (){
-        setTimeout(function(){
-            console.log(this.cualidad);
+        // let that = this;
+        setTimeout(() => {
+            console.log(this.fisico);
         }, 5000);
     }
     // cualidadFlecha: () => {
     //     console.log("luisa es :" + " " + this.fisico);
     // }
 }
-console.log(luisa.cualidad());
+luisa.cualidad();
 // console.log(luisa.cualidadFlecha());
