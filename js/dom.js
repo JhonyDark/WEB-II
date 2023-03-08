@@ -15,6 +15,7 @@
 //         list[i].classList.toggle("prueba1");
 // }
 
+//Funcion para un evento de click
 function enviarTexto() {
     var inputElement = document.getElementById("textInput");
     var texto = inputElement.value;
